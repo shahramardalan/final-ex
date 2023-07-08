@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    flex-direction: column;
+
+}
+.header{
+    width: 100%;
+    height: 600px;
+    background-color: aquamarine;
+}
+
+.welecome{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(62, 206, 158);
+}
+
+.video{
+    max-height: 400px;
+    background-color: white;
+}
+
+.descrption{
+     max-height: 400px;
+    background-color: white;
+}
