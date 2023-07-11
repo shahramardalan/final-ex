@@ -17,10 +17,9 @@
 
 .nav-bar {
   display: flex;
-  height: 20%;
-  justify-content: space-around;
-  gap: 40%;
+  justify-content: space-between;
   align-items: center;
+  padding: 16px 64px;
 }
 
 .nav-bar h1,
@@ -40,15 +39,14 @@ i {
 }
 
 .header-content {
-  width: 100vw;
-  height: 400px;
   margin-top: 50px;
-  /* background-color: rgba(0, 0, 0, 0); */
   color: var(--fontColor);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  text-align: center;
 }
 
 .header-content h1 {
@@ -61,13 +59,14 @@ i {
 .header-content p {
   padding-bottom: 50px;
   font-family: var(--textFont);
-  font-size: 1.2em;
+  font-size: 1em;
   z-index: 99;
 }
 
 .header-content button {
   width: 180px;
   height: 50px;
+  margin: 0 auto;
   font-family: var(--textFont);
   letter-spacing: 0.2em;
   border: 2px solid #e8e8e8;
