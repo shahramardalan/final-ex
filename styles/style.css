@@ -7,6 +7,7 @@
 
 body {
   box-sizing: border-box;
+  right: 0;
 }
 
 .first-screen {
@@ -192,83 +193,97 @@ i {
   text-align: center;
 }
 
-.section-4{
+.section-4 {
+  border:3px solid white;
   position: relative;
   width: 100vw;
+  margin-top: 5%;
 }
 
-.sec-4-1{
-  width: 100%;
+.angled-top {
+  position: absolute;
+  bottom: 0;
+  border-top: 70px solid transparent;
+  border-right: 100vw solid #65c0ba;
+  height: 800px;
+  width: 0;
+  z-index: -1;
+}
+.sec-4-1 {
+  /* width: 100%;
   height: 60%;
   position: relative;
   background: #ffff;
-  margin-bottom: 400px;
+  margin-bottom: 400px; */
+  text-align: center;
+  height: 30%;
+  margin-bottom: 700px;
 }
 
-.sec-4-2{
+/* .sec-4-2 {
   width: 100%;
-  height: 80%;
+  height: 800px;
   display: flex;
   align-items: center;
   flex-direction: column;
   position: relative;
   background: var(--primary-color);
-}
+  border: 2px solid green;
+} */
 
-.sec-4-2::before{
-  content: '';
-  position: absolute;
-  border-bottom: 100px solid var(--primary-color);
-  border-left: 100vw solid transparent;
-  top: -100px;
-}
-
-.sec-4-title{
-  width: 45%;
-  margin-left: 50%;
-  transform: translateX(-50%);
+.sec-4-1-title {
+  width: 100%;
   text-align: center;
-  padding-top: 50px;
 }
 
-.sec-4-title h1{
-  font-family: var(--titleFont);
-  font-size: 2.9em;
-  padding-bottom: .5em;
+.sec-4-1-title h1 {
+  width: 50%;
+  font-family: var(--title-font);
+  font-weight: 900;
+  font-size: 3.5rem;
+  padding-top: calc(var(--spacing)*4);
+  padding-bottom: calc(var(--spacing)*4); 
+  margin: 0 auto;
 }
 
-.sec-4-title p{
+.sec-4-1-title p {
   color: #6c757d;
   font-family: var(--textFont);
   line-height: 1.5rem;
+  font-size: 0.7em;
+  padding-top: 10px;
 }
 
-.sec-4-img{
-  position: absolute;
+.sec-4-1-img {
   background: url(/imgs/3.png);
   background-size: cover;
   background-repeat: no-repeat;
   width: 600px;
   height: 400px;
   z-index: 99;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 50px;
 }
 
-.sec-4-2-title{
-  width: 30%;
-  padding-top: 10%;
+.sec-4-2-title {
+  position: absolute;
+  width: 100vw;
+  align-items: center;
   text-align: center;
+  bottom: 0;
+  right: 0;
+  margin-top: 80px;
+  border: 2px solid red;
 }
 
-.sec-4-2 .sec-4-2-title h1{
+.sec-4-2 .sec-4-2-title h1 {
   font-family: var(--titleFont);
   font-size: 2.9em;
 }
 
-.sec-4-2 .sec-4-2-title p{
+.sec-4-2 .sec-4-2-title p {
   font-family: var(--textFont);
   line-height: 1.5rem;
-  padding-top: 2rem;
+  padding-top: 20px;
 }
