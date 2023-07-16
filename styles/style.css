@@ -5,8 +5,10 @@
   --textFont: "Mukta Mahee", sans-serif;
 }
 
-body {
-  box-sizing: border-box;
+.main {
+  top:  0;
+  left: 0;
+  bottom: 0;
   right: 0;
 }
 
@@ -90,7 +92,6 @@ i {
   justify-content: center;
   align-items: center;
   width: 100vw;
-  /* height: 100vh; */
   margin-top: 100px;
 }
 
@@ -145,26 +146,30 @@ i {
 }
 
 .section-3 {
-  background-color: #f5f5f57c;
+  background-color: #ffff;
+  width: 100vw;
+}
+.sec-3-container {
+  width: 100%;
 }
 
 .section-3 .sec-3-title {
-  width: 50%;
-  margin-left: 50%;
-  transform: translateX(-50%);
   text-align: center;
   padding-top: 100px;
 }
 
 .section-3 .sec-3-title h1 {
   font-family: var(--titleFont);
+  font-size: 1.3em;
   padding-bottom: 20px;
 }
 
 .section-3 .sec-3-title p {
   font-family: var(--textFont);
+  font-size: small;
   padding-bottom: 50px;
   line-height: 1.5rem;
+  color: #6c757d;
 }
 .section-3 .sec-3-container h2 {
   font-family: var(--titleFont);
@@ -175,6 +180,17 @@ i {
   font-family: var(--textFont);
   line-height: 1.5rem;
   padding-top: 20px;
+  color: #6c757d;
+  font-size: small;
+}
+
+.sec-3-row-1-item1,
+.sec-3-row-1-item2,
+.sec-3-row-1-item3,
+.sec-3-row-2-item1,
+.sec-3-row-2-item2,
+.sec-3-row-2-item3 {
+  width: 20%;
 }
 
 .row-1 {
@@ -194,11 +210,10 @@ i {
 }
 
 .section-4 {
-  border:3px solid white;
+  border: 3px solid white;
   position: relative;
   width: 100vw;
   margin-top: 5%;
-  border: 2px solid rebeccapurple;
 }
 
 .angled-top {
@@ -226,8 +241,8 @@ i {
   font-family: var(--title-font);
   font-weight: 900;
   font-size: 3.5rem;
-  padding-top: calc(var(--spacing)*4);
-  padding-bottom: calc(var(--spacing)*4); 
+  padding-top: calc(var(--spacing) * 4);
+  padding-bottom: calc(var(--spacing) * 4);
   margin: 0 auto;
 }
 
@@ -251,10 +266,9 @@ i {
   margin-top: 50px;
 }
 
-.sec-4-2{
+.sec-4-2 {
   position: absolute;
   top: 45%;
-  border: 2px solid red;
 }
 
 .sec-4-2-title {
@@ -264,7 +278,6 @@ i {
   bottom: 0;
   right: 0;
   margin-top: 80px;
-  /* border: 2px solid red; */
 }
 
 .sec-4-2 .sec-4-2-title h1 {
@@ -274,6 +287,95 @@ i {
 
 .sec-4-2 .sec-4-2-title p {
   font-family: var(--textFont);
+  color: var(--fontColor);
   line-height: 1.5rem;
-  padding-top: 20px;
+  font-size: 0.9em;
+  padding-top: 10px;
 }
+
+.sec-4-2-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 50px;
+  text-align: left;
+}
+
+.sec-4-2-card-1,
+.sec-4-2-card-2,
+.sec-4-2-card-3{
+  width: 20%;
+  height: 400px;
+  background-color: #ffff;
+}
+
+.sec-4-2-card .calendar {
+  font-family: var(--textFont);
+  color: #ced4da;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.sec-4-2-card h2 {
+  font-family: var(--titleFont);
+  padding-left: 1rem;
+  font-size: x-large;
+}
+.sec-4-2-card p {
+  font-family: var(--textFont);
+  color: #6c757d;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  line-height: 1.5rem;
+  font-size: small;
+}
+
+.section-5{
+  width: 100vw;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 10%;
+}
+
+.customers{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: left;
+}
+
+.section-5 h1{
+font-family: var(--titleFont);
+font-size: 3em;
+padding-bottom: 50px;
+}
+.costumer-1,
+.costumer-2,
+.costumer-3{
+  width: 20%;
+  text-align: left;
+}
+
+.customers img{
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.customers p{
+  font-family: var(--textFont);
+  color: #4a4b4b;
+  padding-top: 1rem;
+  line-height: 1.5rem;
+  font-size: small;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.customers .customer-name{
+  color: #6c757d;
+  padding-left: 10px;
+  
+}
+
