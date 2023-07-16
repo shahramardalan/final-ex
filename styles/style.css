@@ -6,7 +6,7 @@
 }
 
 .main {
-  top:  0;
+  top: 0;
   left: 0;
   bottom: 0;
   right: 0;
@@ -303,7 +303,7 @@ i {
 
 .sec-4-2-card-1,
 .sec-4-2-card-2,
-.sec-4-2-card-3{
+.sec-4-2-card-3 {
   width: 20%;
   height: 400px;
   background-color: #ffff;
@@ -322,6 +322,7 @@ i {
   padding-left: 1rem;
   font-size: x-large;
 }
+
 .sec-4-2-card p {
   font-family: var(--textFont);
   color: #6c757d;
@@ -331,39 +332,40 @@ i {
   font-size: small;
 }
 
-.section-5{
+.section-5,
+.section-6 {
   width: 100vw;
   text-align: center;
   margin-top: 50px;
   margin-bottom: 10%;
 }
 
-.customers{
+.customers {
   display: flex;
   flex-direction: row;
   justify-content: center;
   text-align: left;
 }
 
-.section-5 h1{
-font-family: var(--titleFont);
-font-size: 3em;
-padding-bottom: 50px;
+.section-5 h1 {
+  font-family: var(--titleFont);
+  font-size: 3em;
+  padding-bottom: 50px;
 }
 .costumer-1,
 .costumer-2,
-.costumer-3{
+.costumer-3 {
   width: 20%;
   text-align: left;
 }
 
-.customers img{
+.customers img {
   text-align: center;
   width: 50px;
   height: 50px;
   border-radius: 50%;
 }
-.customers p{
+.customers p {
   font-family: var(--textFont);
   color: #4a4b4b;
   padding-top: 1rem;
@@ -373,9 +375,51 @@ padding-bottom: 50px;
   font-weight: bold;
 }
 
-.customers .customer-name{
+.customers .customer-name {
   color: #6c757d;
   padding-left: 10px;
-  
 }
 
+.sec6-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: left;
+}
+
+.section-6 h1{
+  font-family: var(--titleFont);
+  font-size: 2em;
+  padding-bottom: 10px;
+}
+
+.section-6 p{
+  font-family: var(--textFont);
+  color: #6c757d;
+  padding-left: 1rem;
+  line-height: 1.5rem;
+  font-size: small;
+  padding-bottom: 40px;
+}
+.sec6-cards img {
+  width: 100%;
+}
+
+.sec6-cards h2 {
+  font-family: var(--titleFont);
+  padding-left: 1rem;
+  font-size: medium;
+  padding-left: 0;
+}
+
+.sec6-cards .star-rating{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  color: var(--primary-color);
+  font-size: x-small;
+}
+
+.sec6-cards .star-rating h4{
+  color: #6c757d;
+}
