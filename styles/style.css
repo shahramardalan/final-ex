@@ -332,14 +332,21 @@ i {
   font-size: small;
 }
 
-.section-5,
+.section-5 {
+  width: 100vw;
+  background-color: #fafafa;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  margin-bottom: 10%;
+  padding-bottom: 50px;
+}
+
 .section-6 {
   width: 100vw;
   text-align: center;
   margin-top: 50px;
   margin-bottom: 10%;
 }
-
 .customers {
   display: flex;
   flex-direction: row;
@@ -351,6 +358,7 @@ i {
   font-family: var(--titleFont);
   font-size: 3em;
   padding-bottom: 50px;
+  padding-top: 50px;
 }
 .costumer-1,
 .costumer-2,
@@ -387,13 +395,14 @@ i {
   text-align: left;
 }
 
-.section-6 h1{
+.section-6 h1 {
   font-family: var(--titleFont);
   font-size: 2em;
+  padding-top: 50px;
   padding-bottom: 10px;
 }
 
-.section-6 p{
+.section-6 p {
   font-family: var(--textFont);
   color: #6c757d;
   padding-left: 1rem;
@@ -412,7 +421,7 @@ i {
   padding-left: 0;
 }
 
-.sec6-cards .star-rating{
+.sec6-cards .star-rating {
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
@@ -420,6 +429,12 @@ i {
   font-size: x-small;
 }
 
-.sec6-cards .star-rating h4{
+.sec6-cards .star-rating h4 {
   color: #6c757d;
+}
+
+footer {
+  background-color: #1a1a1a;
+  width: 100vw;
+  height: 500px;
 }
